@@ -1,0 +1,88 @@
+/*   random images:      https://source.unsplash.com/random    */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+/**********************************************
+                Global styles
+**********************************************/
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background: url(https://source.unsplash.com/lmFJOx7hPc4) center/cover no-repeat;
+  text-shadow: 2px 1px 1px black;
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+.login-container {
+  position: relative;
+  top: 20%;
+  margin: auto;
+  max-width: 700px;
+  height: 500px;
+  background-color: rgba(20, 20, 20, .8);
+  color: #ddd;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, .4);
+}
+
+.login-container .form-field label,
+.login-container .form-field input {
+  color: #ddd;
+}
+
+.login-container .form-field input {
+  text-indent: 10px;
+}
+
+.btn {
+  width: 130px;
+  margin: 1.5rem 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.flexClass {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+i.fa-regular.fa-eye {
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.alert-message {
+  visibility: hidden;
+}
+
+.form-field.error input {
+  border-color: red;
+}
+
+.form-field.success input {
+  border-color: greenyellow;
+}
+
+/* na focus border-bottom #26a69a
+nije focus border-bottom #9e9e9e */
+/**************************************
+            @media Queries
+**************************************/
+
+@media all and (min-width: 412px) {}

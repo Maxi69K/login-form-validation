@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/1bbe3cd657.js" crossorigin="anonymous"></script>
+    <title>Login Form Validation</title>
+    <meta name="description" content="Login Form Validation">
+    <meta name="keywords" content="Login, Form, Validation">
+    <meta name="author" content="Goran Kekez">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" id="loginForm">
+            <div class="form-field">
+                <label for="loginUsername">User Name</label>
+                <input type="text" id="loginUsername" placeholder="Enter user name">
+                <small class="alert-message">Error</small>
+            </div>
+            <div class="form-field">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter password">
+                <small class="alert-message">Error</small>
+            </div>
+            <div class="form-field flexClass">
+                <i class="fa-regular fa-eye"></i>
+                <label for="">Show/hide password</label>
+            </div>
+            <button class="btn" id="submitBtn" type="submit">Go</button>
+        </form>
+
+        <div class="reset-password">
+            <small><a href="#">Forgot user Name or Password</a></small>
+        </div>
+        <form action="#" class="form-request" id="requestForm">
+            <div class="form-field">
+                <label for="requestEmail">Email</label>
+                <input type="email" id="requestEmail" placeholder="Enter your Email">
+                <small class="alert-message">Error</small>
+            </div>
+            <button class="btn red" id="requestBtn" type="submit">Request</button>
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+    <noscript>JavaScript not enabled!</noscript>
+</body>
+
+</html>
